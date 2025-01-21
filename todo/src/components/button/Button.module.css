@@ -1,0 +1,8 @@
+.button {
+	text-align: center;
+	align-items: center;
+	cursor: pointer;
+}
+.button:hover {
+	background-color: blue;
+}

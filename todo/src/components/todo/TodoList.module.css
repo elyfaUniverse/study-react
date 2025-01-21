@@ -1,0 +1,10 @@
+.wrapper {
+	width: 100%;
+	text-align: left;
+	height: auto;
+}
+.wrapper li {
+	margin: 0 auto;
+
+	padding-bottom: 9px;
+}

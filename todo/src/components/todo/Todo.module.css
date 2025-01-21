@@ -1,0 +1,53 @@
+.wrapper {
+	width: 100%;
+
+	word-break: break-all;
+	display: flex;
+
+	position: relative;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.wrapper button {
+	background-color: greenyellow;
+	width: 80px;
+	height: 50px;
+	border-radius: 5px;
+}
+.wrapper div {
+	padding: 8px;
+}
+.deleteIcon {
+	color: grey;
+	font-size: 24px;
+	cursor: pointer;
+	transition: transform step-end;
+}
+.deleteIcon :hover {
+	transform: translate(0, 2px);
+}
+.deleteIcon:active {
+	color: orange;
+}
+.checkIcon {
+	color: grey;
+	font-size: 24px;
+	cursor: pointer;
+	transition: transform step-end;
+}
+.checkIcon :hover {
+	transform: translate(0, 2px);
+}
+.checkIcon:active {
+	color: green;
+}
+.iconGroup {
+	display: flex;
+	justify-content: space-around;
+}
+.completedTodo {
+	background-color: unset;
+	border-color: gray;
+	color: green;
+}
