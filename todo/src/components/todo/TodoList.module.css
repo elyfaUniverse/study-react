@@ -2,6 +2,8 @@
 	width: 100%;
 	text-align: left;
 	height: auto;
+	background-color: pink;
+	margin: 0 auto;
 }
 .wrapper li {
 	margin: 0 auto;

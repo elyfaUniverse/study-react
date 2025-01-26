@@ -1,0 +1,28 @@
+.menu {
+	background-color: blue;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	list-style-type: none;
+	padding: 30px 20px;
+	gap: 20px;
+	min-width: 150px;
+	position: fixed;
+}
+.menu li {
+	text-align: left;
+}
+.menu li a :hover {
+	text-decoration: underline;
+}
+.menu li a {
+	text-decoration: none;
+	color: white;
+}
+@media (max-width: 700px) {
+	.menu {
+		padding: 15px 10px;
+		gap: 10px;
+		min-width: 100px;
+	}
+}
