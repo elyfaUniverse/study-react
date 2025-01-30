@@ -2,7 +2,9 @@ import React from 'react'
 import { useParams } from 'react-router-dom'
 
 import { courses } from '../../data'
+
 import styles from './Course.module.css'
+import NotFound from './NotFound'
 
 // Компонент Course
 const Course = () => {
@@ -10,7 +12,7 @@ const Course = () => {
 
 	const course = courses.find(course => course.slug === params.slug)
 	if (!course) {
-		return <div>Курс не найден.</div>
+		return <NotFound />
 	}
 	return (
 		<div className={styles.wrapper}>

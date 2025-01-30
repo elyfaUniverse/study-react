@@ -18,7 +18,8 @@
 .wrapper div {
 	padding: 8px;
 }
-.deleteIcon {
+.deleteIcon,
+.checkIcon {
 	color: grey;
 	font-size: 24px;
 	cursor: pointer;
@@ -30,12 +31,7 @@
 .deleteIcon:active {
 	color: orange;
 }
-.checkIcon {
-	color: grey;
-	font-size: 24px;
-	cursor: pointer;
-	transition: transform step-end;
-}
+
 .checkIcon :hover {
 	transform: translate(0, 2px);
 }

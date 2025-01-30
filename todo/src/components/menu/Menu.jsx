@@ -11,16 +11,7 @@ const Menu = () => {
 						<h3>Home</h3>
 					</Link>
 				</li>
-				<li>
-					<Link to='/alltodos'>
-						<h3>All todos</h3>
-					</Link>
-				</li>
-				<li>
-					<Link to='/donetodos'>
-						<h3>Done todos</h3>
-					</Link>
-				</li>
+
 				<li>
 					<Link to='/courses'>
 						<h3>Courses</h3>
