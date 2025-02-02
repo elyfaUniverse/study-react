@@ -6,6 +6,8 @@ import LayoutText from './components/layout/LayotText/LayoutText'
 import LayoutSection from './components/layout/LayoutSection/LayoutSection'
 import TodoList from './components/todo/TodoList'
 
+import ChangeUser from './components/user/ChangeUser'
+import User from './components/user/User'
 import UserContext from './context/UserContext'
 
 function Home() {
@@ -72,9 +74,12 @@ function Home() {
 	const allTodosCount = todos.length
 
 	return (
-		<UserContext.Provider value={user}>
+		<UserContext.Provider value={{ user: user, setUser: setUser }}>
 			<LayoutSection>
-				<div>  </div>
+				<div>
+					<User />
+					<ChangeUser />
+				</div>
 				<h1> Your`s todos list</h1>
 				<Input addTodo={addTodoHandler} />
 

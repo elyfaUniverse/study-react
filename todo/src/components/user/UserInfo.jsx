@@ -1,10 +1,11 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import UserContext from '../../context/UserContext'
 
 export default function UserInfo() {
+	const { user } = useContext(UserContext)
 	return (
-		<UserContext.Consumer>
-			<div>{value => <h1>{value}</h1>}</div>
-		</UserContext.Consumer>
+		<div>
+			<h1>{user}</h1>
+		</div>
 	)
 }
