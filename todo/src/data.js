@@ -9,7 +9,7 @@ export const courses = [
 		duration: '4 недели',
 		price: 100,
 		language: 'Русский',
-		slug: 'osnovy-python', // Добавленный slug
+		slug: 'python', // Добавленный slug
 	},
 	{
 		id: 2,
@@ -20,7 +20,7 @@ export const courses = [
 		duration: '6 недель',
 		price: 150,
 		language: 'Русский',
-		slug: 'veb-razrabotka-na-javascript', // Добавленный slug
+		slug: 'javascript', // Добавленный slug
 	},
 	{
 		id: 3,
@@ -31,7 +31,7 @@ export const courses = [
 		duration: '8 недель',
 		price: 200,
 		language: 'Русский',
-		slug: 'razrabotka-mobilnykh-prilozheniy-na-swift', // Добавленный slug
+		slug: 'swift', // Добавленный slug
 	},
 	{
 		id: 4,
@@ -42,7 +42,7 @@ export const courses = [
 		duration: '5 недель',
 		price: 180,
 		language: 'Русский',
-		slug: 'algoritmy-i-struktury-dannykh', // Добавленный slug
+		slug: 'algoritmy', // Добавленный slug
 	},
 	{
 		id: 5,
@@ -53,6 +53,6 @@ export const courses = [
 		duration: '10 недель',
 		price: 250,
 		language: 'Русский',
-		slug: 'osnovy-mashinnogo-obucheniya', // Добавленный slug
+		slug: 'mashin', // Добавленный slug
 	},
 ]
