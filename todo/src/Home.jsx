@@ -6,8 +6,11 @@ import LayoutText from './components/layout/LayotText/LayoutText'
 import LayoutSection from './components/layout/LayoutSection/LayoutSection'
 import TodoList from './components/todo/TodoList'
 
+import UserContext from './context/UserContext'
+
 function Home() {
 	const [todos, setTodos] = useState([])
+	const [user, setUser] = useState('Elvira')
 
 	// Получение todos из базы данных при загрузке приложения
 	useEffect(() => {
@@ -69,8 +72,9 @@ function Home() {
 	const allTodosCount = todos.length
 
 	return (
-		<>
+		<UserContext.Provider value={user}>
 			<LayoutSection>
+				<div>  </div>
 				<h1> Your`s todos list</h1>
 				<Input addTodo={addTodoHandler} />
 
@@ -95,7 +99,7 @@ function Home() {
 					toggleTodo={toggleTodoHandler}
 				/>
 			</LayoutSection>
-		</>
+		</UserContext.Provider>
 	)
 }
 
